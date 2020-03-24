@@ -5,6 +5,8 @@ $(function(){
       $btnCal = $('#calculate'),
       $perimeter = $('#perimeter'),
       $area = $('#area');
+      $forkMeGH.show("https://github.com/gaoruixue1215/rectangle"),
+      $bszPageFooter.show('body')
 
   function roundFractional(x, n) {
     return Math.round(x * Math.pow(10, n)) / Math.pow(10, n);
