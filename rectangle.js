@@ -1,30 +1,24 @@
 $(function(){
-  //get dom elem
-  var $width = $('#width'),
-      $height = $('#height'),
-      $btnCal = $('#calculate'),
-      $perimeter = $('#perimeter'),
-      $area = $('#area');
-      $forkMeGH.show("https://github.com/gaoruixue1215/rectangle"),
-      $bszPageFooter.show('body')
-
-  function roundFractional(x, n) {
-    return Math.round(x * Math.pow(10, n)) / Math.pow(10, n);
-  }
-
-  /*calc button click event*/
-  $btnCal.click(function(){
-
-    //get value
-    var w = Number($width.val());
-    var h = Number($height.val());
-
-    //calculate
-    var p =roundFractional(2*(w+h),1);
-    var a =roundFractional(w*h,2);
-
-    //output
-    $perimeter.val(p);
-    $area.val(a);
-  })
+    $forkMeGH.show("https://github.com/PeiYumeng/rectangle");
+    $bszPageFooter.show("body");
+    //get dom elem
+    var $width = $('#width'),
+          $height = $('#height'),
+          $btnCal = $('#calculate'),
+          $perimeter = $('#perimeter'),
+          $area = $('#area');
+    
+    /*calc button click event*/
+    $btnCal.click(function(){
+        //get value
+        var w = Number($width.val()),
+            h = Number($height.val());
+             
+        //calculate
+        var p = Math.round(2*(w+h)*Math.pow(10,4))/Math.pow(10,4);
+            a = Math.round(w*h*Math.pow(10,4))/Math.pow(10,4);
+        //output
+        $perimeter.val(p);
+        $area.val(a)
+    });
 });
