@@ -77,8 +77,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-htmlhint');
     grunt.loadNpmTasks('grunt-eslint');
-    //grunt.loadNpmTasks('grunt-mocha');
-    //grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-mocha');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     //grunt.loadNpmTasks('grunt-contrib-concat');
